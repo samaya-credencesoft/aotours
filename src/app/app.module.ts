@@ -16,6 +16,7 @@ import { Northislandtour2Component } from './packages/northislandtour/northislan
 import { Southislandtour1Component } from './packages/southislandtour/southislandtour1/southislandtour1.component';
 import { Southislandtour2Component } from './packages/southislandtour/southislandtour2/southislandtour2.component';
 import { WelcomebannerComponent } from './home/welcomebanner/welcomebanner.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { WelcomebannerComponent } from './home/welcomebanner/welcomebanner.compo
     Northislandtour2Component,
     Southislandtour1Component,
     Southislandtour2Component,
-    WelcomebannerComponent
+    WelcomebannerComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

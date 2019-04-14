@@ -7,7 +7,7 @@ import { Northislandtour1Component } from "../app/packages/northislandtour/north
 import { Northislandtour2Component } from "../app/packages/northislandtour/northislandtour2/northislandtour2.component";
 import { Southislandtour1Component } from "../app/packages/southislandtour/southislandtour1/southislandtour1.component";
 import { Southislandtour2Component } from "../app/packages/southislandtour/southislandtour2/southislandtour2.component";
-
+import { ContactComponent } from "../app/contact/contact.component";
 import { HomeComponent } from "../app/home/home.component";
 
 const routes: Routes = [
@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: "home",
     component: HomeComponent
+  },
+  {
+    path: "contact",
+    component: ContactComponent
   },
   {
     path: "AucklandTour1",
