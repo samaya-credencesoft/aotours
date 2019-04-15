@@ -26,6 +26,8 @@ import {
   MatRadioModule,
   MatFormFieldModule
 } from "@angular/material";
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import {
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

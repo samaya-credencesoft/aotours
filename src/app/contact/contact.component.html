@@ -1,21 +1,21 @@
 <!--START HEADER TOP AREA -->
 <div class="tourist-header-top">
-  <div class="container">
-    <div class="row">
-      <!-- TOP LEFT -->
-      <div class="col-xs-12 col-md-8 col-sm-7">
-        <div class="top-address">
-          <p>
-            <span><i class="fa fa-phone"></i>+64 274-818-861</span>
-            <!-- <a href="#"><i class="fa fa-phone"></i>number</a>
+    <div class="container">
+      <div class="row">
+        <!-- TOP LEFT -->
+        <div class="col-xs-12 col-md-8 col-sm-7">
+          <div class="top-address">
+            <p>
+              <span><i class="fa fa-phone"></i>+64 274-818-861</span>
+              <!-- <a href="#"><i class="fa fa-phone"></i>number</a>
               <a href="#"
                 ><i class="fa fa-envelope-o"></i>example@example.com</a
               > -->
-          </p>
+            </p>
+          </div>
         </div>
-      </div>
-      <!-- TOP RIGHT -->
-      <!-- <div class="col-xs-12 col-md-4 col-sm-5">
+        <!-- TOP RIGHT -->
+        <!-- <div class="col-xs-12 col-md-4 col-sm-5">
           <div class="top-right-menu text-right">
             <ul class="social-icons">
               <li>
@@ -28,67 +28,69 @@
             </ul>
           </div>
         </div> -->
-    </div>
-  </div>
-</div>
-
-<!-- HEADER DEFAULT MANU AREA -->
-<div class="tourist-main-menu one_page hidden-xs hidden-sm">
-  <div class="tourist_nav_area scroll_fixed">
-    <div class="container">
-      <div class="row logo-left">
-        <!-- LOGO -->
-        <div class="col-md-3 col-sm-3 col-xs-4">
-          <div class="logo">
-            <a class="main_sticky_main_l" href="#" title="tourist">
-              <img
-                src="assets/images/AO Tours - Light Background.png"
-                height="60"
-                width="60"
-                alt="tourist"
-              />
-            </a>
-            <a class="main_sticky_l" href="#" title="tourist">
-              <img
-                src="assets/images/AO Tours - Dark Background.png"
-                height="60"
-                width="60"
-                alt="tourist"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!-- MAIN MENU -->
-        <div class="col-md-9 col-sm-9 col-xs-8">
-          <nav class="tourist_menu main-search-menu">
-            <ul class="sub-menu nav_scroll">
-              <li>
-                <a routerLink="/home">Home</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- END MAIN MENU -->
       </div>
     </div>
   </div>
-</div>
-<!-- END HEADER MENU AREA -->
-
-<!-- MOBILE MENU AREA -->
-<div class="mbm hidden-md hidden-lg header_area main-menu-area">
-  <div class="menu_area mobile-menu">
-    <nav>
-      <ul class="main-menu clearfix">
-        <li>
-          <a routerLink="/home">Home</a>
-        </li>
-      </ul>
-    </nav>
+  
+  <!-- HEADER DEFAULT MANU AREA -->
+  <div class="tourist-main-menu one_page hidden-xs hidden-sm">
+    <div class="tourist_nav_area scroll_fixed">
+      <div class="container">
+        <div class="row logo-left">
+          <!-- LOGO -->
+          <div class="col-md-3 col-sm-3 col-xs-4">
+            <div class="logo">
+              <a class="main_sticky_main_l" href="#" title="tourist">
+                <img
+                  src="assets/images/AO Tours - Light Background.png"
+                  height="60"
+                  width="60"
+                  alt="tourist"
+                />
+              </a>
+              <a class="main_sticky_l" href="#" title="tourist">
+                <img
+                  src="assets/images/AO Tours - Dark Background.png"
+                  height="60"
+                  width="60"
+                  alt="tourist"
+                />
+              </a>
+            </div>
+          </div>
+  
+          <!-- MAIN MENU -->
+          <div class="col-md-9 col-sm-9 col-xs-8">
+            <nav class="tourist_menu main-search-menu">
+              <ul class="sub-menu nav_scroll">
+                <li>
+                  <a routerLink="/home">Home</a>
+                </li>
+                <li><a routerLink="/packages">Packages</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- END MAIN MENU -->
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<!-- END MOBILE MENU AREA  -->
+  <!-- END HEADER MENU AREA -->
+  
+  <!-- MOBILE MENU AREA -->
+  <div class="mbm hidden-md hidden-lg header_area main-menu-area">
+    <div class="menu_area mobile-menu">
+      <nav>
+        <ul class="main-menu clearfix">
+          <li>
+            <a routerLink="/home">Home</a>
+          </li>
+          <li><a routerLink="/packages">Packages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- END MOBILE MENU AREA  -->
 
 <div class="breatcome_area">
   <div class="container">
@@ -119,80 +121,108 @@
           <h2 class="contact-title">Book Here</h2>
           <form action="#">
             <div class="form_field">
-              <mat-form-field appearance="outline" class="col-lg-6">
+              <mat-form-field
+                class="col-sm-12 col-xs-12 col-lg-6 col-md-6"
+                appearance="outline"
+              >
                 <mat-label>Name</mat-label>
-                <input matInput placeholder="Name" />
+                <input matInput placeholder="Name" [formControl]="name" />
               </mat-form-field>
-              <mat-form-field appearance="outline" class="col-lg-6">
-                <mat-label>Email</mat-label>
-                <input matInput placeholder="Email" />
-              </mat-form-field>
-            </div>
-            <div class="form_field">
-              <!-- <mat-form-field appearance="outline" class="col-lg-12">
-                <mat-label>Packages</mat-label>
-                <select matNativeControl required>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </mat-form-field> -->
 
-              <mat-form-field appearance="outline" class="col-lg-12">
-                  <mat-label>Packages</mat-label>
-                  <select matNativeControl>
-                    <optgroup label="Auckland Tour">
-                      <option value="AucklandTour1">Auckland City & West Coast Luxury Tour</option>
-                      <option value="AucklandTour2">Auckland to Waitomo Caves and Hobbiton Movie Set One Day Return Tour</option>
-                      <option value="AucklandTour3">Waiheke Island Exploration and Zipline Day Trip from Auckland</option>
-                    </optgroup>
-                    <optgroup label="North Island Tour">
-                      <option value="NorthIslandTour1">Auckland - Bay Of Island - Cape Reinga Tour</option>
-                      <option value="NorthIslandTour2">Auckland - Rotorua - Waitomo Caves Tour</option>
-                    </optgroup>
-                    <optgroup label="South Island Tour">
-                        <option value="SouthIslandTour1">Queens Town Tour</option>
-                        <option value="SouthIslandTour2">Queenstown, Milford Sound, Mount Cook & Christchurch Tour</option>
-                      </optgroup>
-                  </select>
-                </mat-form-field>
+              <mat-form-field
+                class="col-sm-12 col-xs-12 col-lg-6 col-md-6"
+                appearance="outline"
+              >
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" [formControl]="fromEmail" />
+              </mat-form-field>
             </div>
             <div class="form_field">
-              <mat-form-field appearance="outline" class="col-lg-6">
-                <mat-label>No. of Adults</mat-label>
-                <select matNativeControl required>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
+
+              <mat-form-field
+                class="col-sm-12 col-xs-12 col-lg-12 col-md-12"
+                appearance="outline"
+              >
+                <mat-label>Tour Packages</mat-label>
+                <mat-select
+                  [formControl]="subject"
+                  [(ngModel)]="tourPackages"
+                  multiple
+                >
+                  <mat-option
+                    *ngFor="let tourPackages of tourPackage"
+                    [value]="tourPackages.value"
+                  >
+                    {{ tourPackages.name }}
+                  </mat-option>
+                </mat-select>
               </mat-form-field>
-              <mat-form-field appearance="outline" class="col-lg-6">
+            </div>
+            <div class="form_field">
+              <mat-form-field
+                class="col-sm-12 col-xs-12 col-lg-6 col-md-6"
+                appearance="outline"
+              >
+                <mat-label>No. of Adults</mat-label>
+                <mat-select [formControl]="subject" [(ngModel)]="noOfAdults">
+                  <mat-option
+                    *ngFor="let adults of adult"
+                    [value]="adults.value"
+                  >
+                    {{ adults.name }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <mat-form-field
+                class="col-sm-12 col-xs-12 col-lg-6 col-md-6"
+                appearance="outline"
+              >
                 <mat-label>No. of Children</mat-label>
-                <select matNativeControl required>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
+                <mat-select [formControl]="subject" [(ngModel)]="noOfChildren">
+                  <mat-option
+                    *ngFor="let childrens of children"
+                    [value]="childrens.value"
+                  >
+                    {{ childrens.name }}
+                  </mat-option>
+                </mat-select>
               </mat-form-field>
             </div>
             <div class="form_field text_area">
               <mat-form-field
-                hintLabel="Max 100 characters"
+                hintLabel="Max 200 characters"
                 appearance="outline"
-                class="col-lg-12"
+                class="col-sm-12 col-xs-12 col-lg-12 col-md-12"
               >
-                <input matInput #input maxlength="10" placeholder="Message" />
+                <input
+                  matInput
+                  maxlength="200"
+                  #input
+                  maxlength="10"
+                  placeholder="Message"
+                  [formControl]="message"
+                />
                 <mat-hint align="end"
-                  >{{ input.value?.length || 0 }}/100</mat-hint
+                  >{{ input.value?.length || 0 }}/200</mat-hint
                 >
               </mat-form-field>
             </div>
             <div class="form_field">
               <div class="contact_button">
-                <button name="submit">Book</button>
+                <button
+                  name="submit"
+                  type="submit"
+                  (click)="send()"
+                  *ngIf="!emailSuccess"
+                >
+                  Book
+                </button>
+              </div>
+              <div *ngIf="emailSuccess">
+                <p>
+                  We have received your email, will get in touch soon.
+                </p>
               </div>
             </div>
           </form>

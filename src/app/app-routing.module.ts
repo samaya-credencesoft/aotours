@@ -9,7 +9,7 @@ import { Southislandtour1Component } from "../app/packages/southislandtour/south
 import { Southislandtour2Component } from "../app/packages/southislandtour/southislandtour2/southislandtour2.component";
 import { ContactComponent } from "../app/contact/contact.component";
 import { HomeComponent } from "../app/home/home.component";
-
+import { PackagesComponent } from "../app/packages/packages.component";
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   {
@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path: "contact",
     component: ContactComponent
+  },
+  {
+    path: "packages",
+    component: PackagesComponent
   },
   {
     path: "AucklandTour1",
