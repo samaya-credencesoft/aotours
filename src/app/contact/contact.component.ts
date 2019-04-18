@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 export interface Email {
   fromEmail: string;
@@ -35,16 +35,6 @@ export interface tourPackageGroup {
 export class ContactComponent implements OnInit {
 
 
-
-  // tourPackage = [
-  //   {name: 'Auckland City & West Coast Luxury Tour', value: 'AucklandTour1'},
-  //   {name: 'Auckland to Waitomo Caves and Hobbiton Movie Set One Day Return Tour', value: 'AucklandTour2'},
-  //   {name: 'Waiheke Island Exploration and Zipline Day Trip from Auckland', value: 'AucklandTour3'},
-  //   {name: 'Auckland - Bay Of Island - Cape Reinga Tour', value: 'NorthIslandTour1'},
-  //   {name: 'Auckland - Rotorua - Waitomo Caves Tour', value: 'NorthIslandTour2'},
-  //   {name: 'Queens Town Tour', value: 'SouthIslandTour1'},
-  //   {name: 'Queenstown, Milford Sound, Mount Cook & Christchurch Tour', value: 'SouthIslandTour2'},
-  // ]
 
   tourPackageGroups: tourPackageGroup[] = [
     {
@@ -100,14 +90,14 @@ export class ContactComponent implements OnInit {
   lat = -36.79648;
   lng = 174.646926;
   constructor(private http: HttpClient) { }
-  subject: FormControl = new FormControl();
-  name: FormControl = new FormControl();
-  fromEmail: FormControl = new FormControl();
+  subject: FormControl = new FormControl("", [Validators.required]);
+  name: FormControl = new FormControl("", [Validators.required]);
+  fromEmail: FormControl = new FormControl("", [Validators.required]);
   toEmail: FormControl = new FormControl();
-  message: FormControl = new FormControl();
-  noOfAdults: FormControl = new FormControl();
-  noOfChildren: FormControl = new FormControl();
-  tourPackages: FormControl = new FormControl();
+  message: FormControl = new FormControl("", [Validators.required]);
+  noOfAdults: FormControl = new FormControl("", [Validators.required]);
+  noOfChildren: FormControl = new FormControl("", [Validators.required]);
+  tourPackages: FormControl = new FormControl("", [Validators.required]);
   serviceName: string ;
   email: Email ;
   emailSuccess: Boolean ;
@@ -116,6 +106,17 @@ export class ContactComponent implements OnInit {
     name: new FormControl(),
     fromEmail: new FormControl(),
     message:  new FormControl()
+  });
+
+  
+  bookingForm: FormGroup = new FormGroup({
+    name: this.name,
+    fromEmail: this.fromEmail,
+    message: this.message,
+    noOfAdults: this.noOfAdults,
+    noOfChildren: this.noOfChildren,
+    tourPackages: this.tourPackages,
+    subject: this.subject
   });
 
 

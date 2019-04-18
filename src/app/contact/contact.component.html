@@ -119,7 +119,7 @@
       <div class="col-md-6 col-sm-12 col-xs-12">
         <div class="contact_form">
           <h2 class="contact-title">Book Here</h2>
-          <form action="#">
+          <form name="bookingForm" [formGroup]="bookingForm">
             <div class="form_field">
               <mat-form-field
                 class="col-sm-12 col-xs-12 col-lg-6 col-md-6"
@@ -127,6 +127,8 @@
               >
                 <mat-label>Name</mat-label>
                 <input matInput placeholder="Name" [formControl]="name" />
+                <mat-error *ngIf="!name.valid && name.touched"
+                >Name is required!</mat-error>
               </mat-form-field>
 
               <mat-form-field
@@ -135,6 +137,8 @@
               >
                 <mat-label>Email</mat-label>
                 <input matInput placeholder="Email" [formControl]="fromEmail" />
+                <mat-error *ngIf="!fromEmail.valid && fromEmail.touched"
+                >Email is required!</mat-error>
               </mat-form-field>
             </div>
             <div class="form_field">
@@ -157,6 +161,8 @@
                   </mat-option>
                 </mat-optgroup>
                 </mat-select>
+                <mat-error *ngIf="!subject.valid && subject.touched"
+                >Choose a package.</mat-error>
               </mat-form-field>
             </div>
             <div class="form_field">
@@ -173,6 +179,8 @@
                     {{ adults.name }}
                   </mat-option>
                 </mat-select>
+                <mat-error *ngIf="!subject.valid && subject.touched"
+                >No. of adults is required!</mat-error>
               </mat-form-field>
 
               <mat-form-field
@@ -188,6 +196,8 @@
                     {{ childrens.name }}
                   </mat-option>
                 </mat-select>
+                <mat-error *ngIf="!subject.valid && subject.touched"
+                >No. of children is required!</mat-error>
               </mat-form-field>
             </div>
             <div class="form_field text_area">
@@ -207,6 +217,8 @@
                 <mat-hint align="end"
                   >{{ input.value?.length || 0 }}/200</mat-hint
                 >
+                <mat-error *ngIf="!message.valid && message.touched"
+                >Message is required!</mat-error>
               </mat-form-field>
             </div>
             <div class="form_field">
@@ -215,6 +227,7 @@
                   name="submit"
                   type="submit"
                   (click)="send()"
+                  [disabled]="bookingForm.invalid"
                   *ngIf="!emailSuccess"
                 >
                   Book
