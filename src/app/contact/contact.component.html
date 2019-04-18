@@ -1,21 +1,21 @@
 <!--START HEADER TOP AREA -->
 <div class="tourist-header-top">
-    <div class="container">
-      <div class="row">
-        <!-- TOP LEFT -->
-        <div class="col-xs-12 col-md-8 col-sm-7">
-          <div class="top-address">
-            <p>
-              <span><i class="fa fa-phone"></i>+64 274-818-861</span>
-              <!-- <a href="#"><i class="fa fa-phone"></i>number</a>
+  <div class="container">
+    <div class="row">
+      <!-- TOP LEFT -->
+      <div class="col-xs-12 col-md-8 col-sm-7">
+        <div class="top-address">
+          <p>
+            <span><i class="fa fa-phone"></i>+64 274-818-861</span>
+            <!-- <a href="#"><i class="fa fa-phone"></i>number</a>
               <a href="#"
                 ><i class="fa fa-envelope-o"></i>example@example.com</a
               > -->
-            </p>
-          </div>
+          </p>
         </div>
-        <!-- TOP RIGHT -->
-        <!-- <div class="col-xs-12 col-md-4 col-sm-5">
+      </div>
+      <!-- TOP RIGHT -->
+      <!-- <div class="col-xs-12 col-md-4 col-sm-5">
           <div class="top-right-menu text-right">
             <ul class="social-icons">
               <li>
@@ -28,69 +28,69 @@
             </ul>
           </div>
         </div> -->
-      </div>
     </div>
   </div>
-  
-  <!-- HEADER DEFAULT MANU AREA -->
-  <div class="tourist-main-menu one_page hidden-xs hidden-sm">
-    <div class="tourist_nav_area scroll_fixed">
-      <div class="container">
-        <div class="row logo-left">
-          <!-- LOGO -->
-          <div class="col-md-3 col-sm-3 col-xs-4">
-            <div class="logo">
-              <a class="main_sticky_main_l" href="#" title="tourist">
-                <img
-                  src="assets/images/AO Tours - Light Background.png"
-                  height="60"
-                  width="60"
-                  alt="tourist"
-                />
-              </a>
-              <a class="main_sticky_l" href="#" title="tourist">
-                <img
-                  src="assets/images/AO Tours - Dark Background.png"
-                  height="60"
-                  width="60"
-                  alt="tourist"
-                />
-              </a>
-            </div>
+</div>
+
+<!-- HEADER DEFAULT MANU AREA -->
+<div class="tourist-main-menu one_page hidden-xs hidden-sm">
+  <div class="tourist_nav_area scroll_fixed">
+    <div class="container">
+      <div class="row logo-left">
+        <!-- LOGO -->
+        <div class="col-md-3 col-sm-3 col-xs-4">
+          <div class="logo">
+            <a class="main_sticky_main_l" href="#" title="tourist">
+              <img
+                src="assets/images/AO Tours - Light Background.png"
+                height="60"
+                width="60"
+                alt="tourist"
+              />
+            </a>
+            <a class="main_sticky_l" href="#" title="tourist">
+              <img
+                src="assets/images/AO Tours - Dark Background.png"
+                height="60"
+                width="60"
+                alt="tourist"
+              />
+            </a>
           </div>
-  
-          <!-- MAIN MENU -->
-          <div class="col-md-9 col-sm-9 col-xs-8">
-            <nav class="tourist_menu main-search-menu">
-              <ul class="sub-menu nav_scroll">
-                <li>
-                  <a routerLink="/home">Home</a>
-                </li>
-                <li><a routerLink="/packages">Packages</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- END MAIN MENU -->
         </div>
+
+        <!-- MAIN MENU -->
+        <div class="col-md-9 col-sm-9 col-xs-8">
+          <nav class="tourist_menu main-search-menu">
+            <ul class="sub-menu nav_scroll">
+              <li>
+                <a routerLink="/home">Home</a>
+              </li>
+              <li><a routerLink="/packages">Packages</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- END MAIN MENU -->
       </div>
     </div>
   </div>
-  <!-- END HEADER MENU AREA -->
-  
-  <!-- MOBILE MENU AREA -->
-  <div class="mbm hidden-md hidden-lg header_area main-menu-area">
-    <div class="menu_area mobile-menu">
-      <nav>
-        <ul class="main-menu clearfix">
-          <li>
-            <a routerLink="/home">Home</a>
-          </li>
-          <li><a routerLink="/packages">Packages</a></li>
-        </ul>
-      </nav>
-    </div>
+</div>
+<!-- END HEADER MENU AREA -->
+
+<!-- MOBILE MENU AREA -->
+<div class="mbm hidden-md hidden-lg header_area main-menu-area">
+  <div class="menu_area mobile-menu">
+    <nav>
+      <ul class="main-menu clearfix">
+        <li>
+          <a routerLink="/home">Home</a>
+        </li>
+        <li><a routerLink="/packages">Packages</a></li>
+      </ul>
+    </nav>
   </div>
-  <!-- END MOBILE MENU AREA  -->
+</div>
+<!-- END MOBILE MENU AREA  -->
 
 <div class="breatcome_area">
   <div class="container">
@@ -138,7 +138,6 @@
               </mat-form-field>
             </div>
             <div class="form_field">
-
               <mat-form-field
                 class="col-sm-12 col-xs-12 col-lg-12 col-md-12"
                 appearance="outline"
@@ -149,12 +148,14 @@
                   [(ngModel)]="tourPackages"
                   multiple
                 >
+                <mat-optgroup *ngFor="let group of tourPackageGroups" [label]="group.name">
                   <mat-option
-                    *ngFor="let tourPackages of tourPackage"
+                    *ngFor="let tourPackages of group.tourPackage"
                     [value]="tourPackages.value"
                   >
                     {{ tourPackages.name }}
                   </mat-option>
+                </mat-optgroup>
                 </mat-select>
               </mat-form-field>
             </div>

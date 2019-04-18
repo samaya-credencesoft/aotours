@@ -16,6 +16,17 @@ export interface ServiceList {
 
 }
 
+
+export interface tourPackage {
+  value: string;
+  name: string;
+}
+
+export interface tourPackageGroup {
+  name: string;
+  tourPackage: tourPackage[];
+}
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -25,14 +36,39 @@ export class ContactComponent implements OnInit {
 
 
 
-  tourPackage = [
-    {name: 'Auckland City & West Coast Luxury Tour', value: 'AucklandTour1'},
-    {name: 'Auckland to Waitomo Caves and Hobbiton Movie Set One Day Return Tour', value: 'AucklandTour2'},
-    {name: 'Waiheke Island Exploration and Zipline Day Trip from Auckland', value: 'AucklandTour3'},
-    {name: 'Auckland - Bay Of Island - Cape Reinga Tour', value: 'NorthIslandTour1'},
-    {name: 'Auckland - Rotorua - Waitomo Caves Tour', value: 'NorthIslandTour2'},
-    {name: 'Queens Town Tour', value: 'SouthIslandTour1'},
-    {name: 'Queenstown, Milford Sound, Mount Cook & Christchurch Tour', value: 'SouthIslandTour2'},
+  // tourPackage = [
+  //   {name: 'Auckland City & West Coast Luxury Tour', value: 'AucklandTour1'},
+  //   {name: 'Auckland to Waitomo Caves and Hobbiton Movie Set One Day Return Tour', value: 'AucklandTour2'},
+  //   {name: 'Waiheke Island Exploration and Zipline Day Trip from Auckland', value: 'AucklandTour3'},
+  //   {name: 'Auckland - Bay Of Island - Cape Reinga Tour', value: 'NorthIslandTour1'},
+  //   {name: 'Auckland - Rotorua - Waitomo Caves Tour', value: 'NorthIslandTour2'},
+  //   {name: 'Queens Town Tour', value: 'SouthIslandTour1'},
+  //   {name: 'Queenstown, Milford Sound, Mount Cook & Christchurch Tour', value: 'SouthIslandTour2'},
+  // ]
+
+  tourPackageGroups: tourPackageGroup[] = [
+    {
+      name: 'Auckland Tour',
+      tourPackage: [
+        {name: 'Auckland City & West Coast Luxury Tour', value: 'AucklandTour1'},
+        {name: 'Auckland to Waitomo Caves and Hobbiton Movie Set One Day Return Tour', value: 'AucklandTour2'},
+        {name: 'Waiheke Island Exploration and Zipline Day Trip from Auckland', value: 'AucklandTour3'}
+      ]
+    },
+    {
+      name: 'North Island Tour',
+      tourPackage: [
+        {name: 'Auckland - Bay Of Island - Cape Reinga Tour', value: 'NorthIslandTour1'},
+         {name: 'Auckland - Rotorua - Waitomo Caves Tour', value: 'NorthIslandTour2'}
+      ]
+    },
+    {
+      name: 'South Island Tour',
+      tourPackage: [
+        {name: 'Queens Town Tour', value: 'SouthIslandTour1'},
+        {name: 'Queenstown, Milford Sound, Mount Cook & Christchurch Tour', value: 'SouthIslandTour2'}
+      ]
+    }
   ]
 
   adult = [
