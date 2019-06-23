@@ -16,6 +16,7 @@ import { Northislandtour1Component } from "./packages/northislandtour/northislan
 import { Northislandtour2Component } from "./packages/northislandtour/northislandtour2/northislandtour2.component";
 import { Southislandtour1Component } from "./packages/southislandtour/southislandtour1/southislandtour1.component";
 import { Southislandtour2Component } from "./packages/southislandtour/southislandtour2/southislandtour2.component";
+import { FulltoursComponent } from "./packages/fulltours/fulltours.component";
 import { WelcomebannerComponent } from "./home/welcomebanner/welcomebanner.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -27,6 +28,7 @@ import {
   MatFormFieldModule
 } from "@angular/material";
 import { HttpClientModule } from '@angular/common/http';
+import { from } from 'rxjs';
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import { HttpClientModule } from '@angular/common/http';
     Southislandtour1Component,
     Southislandtour2Component,
     WelcomebannerComponent,
-    ContactComponent
+    ContactComponent,
+    FulltoursComponent
   ],
   imports: [
     BrowserModule,

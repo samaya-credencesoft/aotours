@@ -58,8 +58,14 @@ export class ContactComponent implements OnInit {
         {name: 'Queens Town Tour', value: 'SouthIslandTour1'},
         {name: 'Queenstown, Milford Sound, Mount Cook & Christchurch Tour', value: 'SouthIslandTour2'}
       ]
+    },
+    {
+    name: 'Full Tour',
+      tourPackage: [
+        {name: 'Full Tour', value: 'FullTour'}
+      ]
     }
-  ]
+    ]
 
   adult = [
     {name: '1', value: '1'},

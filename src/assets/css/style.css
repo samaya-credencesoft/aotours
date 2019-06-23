@@ -1238,7 +1238,7 @@ Slick Slider Area Css
 	background-size: cover;
 }
 .slider-2 {
-	background: url(../../assets/images/slider-1.jpg);
+	background: url(../../assets/images/homeimg.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -1831,8 +1831,8 @@ POPULAR PACKAGE AREA
 .pack_thumb:before{
 	position:absolute;
 	content:"";
-	left:0; 
-	top:0; 
+	left:0;
+	top:0;
 	width:100%;
 	height:100%;
 	background:rgba(255,99,99,0.70);
@@ -1929,7 +1929,7 @@ POPULAR PACKAGE AREA
 }
 
 /*==============================
-/* eduzone COUNTDOWN AREA CSS 
+/* eduzone COUNTDOWN AREA CSS
 ===============================*/
 .count_down_area {
 	background-image: url(assets/images/countdown-bg.jpg);
@@ -2120,7 +2120,7 @@ DESTINATION AREA CSS
 	font-size: 16px;
 	letter-spacing: 2px;
 	margin-right: 25px;
-	border:2px solid transparent; 
+	border:2px solid transparent;
 	transition:.3s;
 }
 .destination_button a.active {
@@ -2128,7 +2128,7 @@ DESTINATION AREA CSS
 }
 .destination_button a:hover{
 	color:#FF6363;
-	border-color:#FF6363; 
+	border-color:#FF6363;
 	background:transparent;
 }
 /* Style Two */
@@ -2183,7 +2183,7 @@ DESTINATION AREA CSS
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0,0.70);
-	opacity:0; 
+	opacity:0;
 		transition:.3s;
 }
 .destination_content_inner_two {
@@ -2984,7 +2984,7 @@ tourist TEAM AREA CSS
 	padding-bottom: 20px;
 }
 
-/* Course Details tab Css */ 
+/* Course Details tab Css */
 .course_dtl_tab {
 	margin-top: 46px;
 }
@@ -3334,7 +3334,7 @@ tourist TESTIMONIAL AREA CSS
 .single_testimonial:hover{
 	border:2px solid #ff6363;
 	box-shadow:none;
-	
+
 }
 .em_test_thumb {
 	padding-bottom: 21px;
