@@ -4578,12 +4578,13 @@ tourist BREADCRUMB AREA CSS
 =============================*/
 
 .breatcome_area {
-	background:url(../../assets/images/brd-bg.jpg);
+	background:url(../../assets/images/homeimg.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 141px 0 143px;
 }
+
 
 .breatcome_title_inner h2 {
 	color: #fff;

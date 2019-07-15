@@ -48,7 +48,7 @@ export class ContactComponent implements OnInit {
     {
       name: 'North Island Tour',
       tourPackage: [
-        {name: 'Auckland - Bay Of Island - Cape Reinga Tour', value: 'NorthIslandTour1'},
+        {name: 'Auckland - Bay of Island - Cape Reinga Tour', value: 'NorthIslandTour1'},
          {name: 'Auckland - Rotorua - Waitomo Caves Tour', value: 'NorthIslandTour2'}
       ]
     },
