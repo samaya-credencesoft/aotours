@@ -1726,10 +1726,11 @@ Slick Slider Area Css
 	padding-top: 8px;
 }
 .about_content h2 {
-	font-size: 31px;
+	font-size: 40px;
 	text-transform: capitalize;
 	font-weight: 600;
 	padding-bottom: 22px;
+	font-size: 30px;
 }
 .about_content h3 {
 	color: #ff6363;
@@ -1748,8 +1749,10 @@ Slick Slider Area Css
 	margin-top: 5px;
 }
 .about_content p {
+	border-top: 1px solid;
 	border-bottom: 1px solid;
 	padding-bottom: 32px;
+	font-size: 18px;
 }
 .about-button{}
 .about-button a {
@@ -1810,7 +1813,7 @@ Slick Slider Area Css
 .home-3.about_content h3 {
 	color: #434e59;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 25px;
 }
 .home-3 .about_thumb img {
 	border-radius: 30px;
@@ -4579,6 +4582,55 @@ tourist BREADCRUMB AREA CSS
 
 .breatcome_area {
 	background:url(../../assets/images/homeimg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 141px 0 143px;
+}
+.auckland_tour1_area {
+	background:url(../../assets/images/auckland1a.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 141px 0 143px;
+}
+.auckland_tour2_area {
+	background:url(../../assets/images/auckland11.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 141px 0 143px;
+}
+.auckland_tour3_area {
+	background:url(../../assets/images/auckland17.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 141px 0 143px;
+}
+.northland_tour1_area {
+	background:url(../../assets/images/north3.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 141px 0 143px;
+}
+.northland_tour2_area {
+	background:url(../../assets/images/north_tour2_header.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 141px 0 143px;
+}
+.southland_tour1_area {
+	background:url(../../assets/images/south4.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 141px 0 143px;
+}
+.southland_tour2_area {
+	background:url(../../assets/images/south12.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
