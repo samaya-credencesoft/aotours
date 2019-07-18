@@ -40,7 +40,7 @@ export class ContactComponent implements OnInit {
     {
       name: 'Auckland Tour',
       tourPackage: [
-        {name: 'Auckland City & West Coast Luxury Tour', value: 'AucklandTour1'},
+        {name: 'Auckland City & West Coast Tour', value: 'AucklandTour1'},
         {name: 'Auckland to Waitomo Caves and Hobbiton Movie Set One Day Return Tour', value: 'AucklandTour2'},
         {name: 'Waiheke Island Exploration and Zipline Day Trip from Auckland', value: 'AucklandTour3'}
       ]
@@ -137,7 +137,7 @@ export class ContactComponent implements OnInit {
 
 
   send() {
-    const TO_EMAIL = 'skr.bglr@gmail.com';
+    const TO_EMAIL = 'stirodker@xtra.co.nz';
     const API_URL = 'https://booking-api-csoft-in.appspot.com';
     const noOfAdults = 'No Of Adults:';
     const noOfChildren = 'No Of Children:';
