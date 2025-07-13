@@ -1,6 +1,4 @@
-(cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF'
-diff --git a/PROJECT_SUMMARY.md b/PROJECT_SUMMARY.md
---- a/PROJECT_SUMMARY.md
+
 +++ b/PROJECT_SUMMARY.md
 @@ -0,0 +1,74 @@
 +# AO Tours - Project Summary
