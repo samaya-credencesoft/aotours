@@ -3,15 +3,15 @@
 **AO Tours** is an Angular 7.2.0 web application that serves as a tourism website for New Zealand tours. The application showcases various tour packages across different regions of New Zealand including Auckland, North Island, and South Island.
 
 ## Technology Stack
-+- **Frontend Framework**: Angular 7.2.0
-+- **UI Libraries**: 
-+  - Angular Material (7.3.7)
-+  - Bootstrap (4.3.1)
-+  - jQuery (3.4.1)
-+- **Build Tool**: Angular CLI 7.3.1
-+- **Deployment**: Google App Engine (Python 2.7 runtime)
-+- **Language**: TypeScript 3.2.2
-+
+- **Frontend Framework**: Angular 7.2.0
+- **UI Libraries**: 
+  - Angular Material (7.3.7)
+  - Bootstrap (4.3.1)
+  - jQuery (3.4.1)
+- **Build Tool**: Angular CLI 7.3.1
+- **Deployment**: Google App Engine (Python 2.7 runtime)
+- **Language**: TypeScript 3.2.2
+
 ## Application Structure
 
 ### Main Components
