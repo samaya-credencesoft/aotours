@@ -1,12 +1,8 @@
+# AO Tours - Project Summary
+## Overview
+**AO Tours** is an Angular 7.2.0 web application that serves as a tourism website for New Zealand tours. The application showcases various tour packages across different regions of New Zealand including Auckland, North Island, and South Island.
 
-+++ b/PROJECT_SUMMARY.md
-@@ -0,0 +1,74 @@
-+# AO Tours - Project Summary
-+
-+## Overview
-+**AO Tours** is an Angular 7.2.0 web application that serves as a tourism website for New Zealand tours. The application showcases various tour packages across different regions of New Zealand including Auckland, North Island, and South Island.
-+
-+## Technology Stack
+## Technology Stack
 +- **Frontend Framework**: Angular 7.2.0
 +- **UI Libraries**: 
 +  - Angular Material (7.3.7)
